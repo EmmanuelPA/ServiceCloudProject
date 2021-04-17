@@ -121,6 +121,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Birthdate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.CleanStatus</field>
         <readable>true</readable>
@@ -137,6 +142,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Department__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Description</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -147,7 +157,17 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.Fax</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.First_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -158,6 +178,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Account.Jigsaw</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Last_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2004,6 +2029,14 @@
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Business_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Person Account Layout</layout>
+        <recordType>Account.Person_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>AlternativePaymentMethod-Alternative Payment Method Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2260,6 +2293,17 @@
     <layoutAssignments>
         <layout>WorkThanks-Thanks Layout</layout>
     </layoutAssignments>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>Account.Business_Account</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Person_Account</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
