@@ -20,13 +20,13 @@
                 <processMetadataValues>
                     <name>inputDataType</name>
                     <value>
-                        <stringValue>ID</stringValue>
+                        <stringValue>String</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
                     <name>leftHandSideType</name>
                     <value>
-                        <stringValue>ID</stringValue>
+                        <stringValue>String</stringValue>
                     </value>
                 </processMetadataValues>
                 <processMetadataValues>
@@ -38,13 +38,13 @@
                 <processMetadataValues>
                     <name>rightHandSideType</name>
                     <value>
-                        <stringValue>ID</stringValue>
+                        <stringValue>String</stringValue>
                     </value>
                 </processMetadataValues>
-                <leftValueReference>myVariable_current.RecordType.Id</leftValueReference>
+                <leftValueReference>myVariable_current.RecordType.DeveloperName</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>0125e0000000NPnAAM</stringValue>
+                    <stringValue>Person_Account</stringValue>
                 </rightValue>
             </conditions>
             <connector>
@@ -53,8 +53,8 @@
             <label>Record Id is to Person Account?</label>
         </rules>
     </decisions>
-    <interviewLabel>Create_Contact-3_InterviewLabel</interviewLabel>
-    <label>Create Contact With Address</label>
+    <interviewLabel>Create_Contact-5_InterviewLabel</interviewLabel>
+    <label>Create Contact With Address Ed 2</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
