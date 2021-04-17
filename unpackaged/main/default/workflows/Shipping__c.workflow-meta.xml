@@ -3,17 +3,13 @@
         <fullName>Email_information_of_shippment</fullName>
         <description>Email information of shippment</description>
         <protected>false</protected>
-        <recipients>
-            <recipient>dario_cabrera1994@resilient-wolf-afn66n.com</recipient>
-            <type>user</type>
-        </recipients>
-        <recipients>
-            <recipient>emmanuel.pecha@gmail.com.admin</recipient>
-            <type>user</type>
-        </recipients>
+        
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/ShippingEmail</template>
-    </alerts>
+    <recipients>
+            <recipient>emmanuel.pecha@gmail.com.admin</recipient>
+            <type>user</type>
+        </recipients></alerts>
     <rules>
         <fullName>Shipping rule</fullName>
         <actions>
