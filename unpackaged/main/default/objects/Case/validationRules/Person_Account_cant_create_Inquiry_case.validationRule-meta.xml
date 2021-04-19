@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Person_Account_cant_create_Inquiry_case</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.Name = "Inquiry" &amp;&amp; Account.RecordType.Name = "Person Account"</errorConditionFormula>
+    <errorMessage>Can't make an Inquiry on a Person Account</errorMessage>
+</ValidationRule>
