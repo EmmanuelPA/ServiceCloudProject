@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?><AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignmentRule>
+        <fullName>SLA Cases</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>Golden</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Business Account</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.CustomerPriority__c</field>
+                <operation>equals</operation>
+                <value>High</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Platinum</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Business Account</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.CustomerPriority__c</field>
+                <operation>equals</operation>
+                <value>Medium</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Standard</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Business Account</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.CustomerPriority__c</field>
+                <operation>equals</operation>
+                <value>Low</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Premium</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Person Account</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Shipments_this_Month__c</field>
+                <operation>greaterThan</operation>
+                <value>10</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Express</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Person Account</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.Shipments_this_Month__c</field>
+                <operation>lessOrEqual</operation>
+                <value>10</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
         <fullName>Standard</fullName>
         <active>true</active>
         <ruleEntry>
