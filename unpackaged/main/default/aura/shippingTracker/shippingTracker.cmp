@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <lightning:workspaceAPI aura:id="workspace" />
+    <c:shippingStatusTracker oncreate="{!c.handleCreate}" onview="{!c.handleView}" onedit="{!c.handleEdit}"></c:shippingStatusTracker>
+</aura:component>

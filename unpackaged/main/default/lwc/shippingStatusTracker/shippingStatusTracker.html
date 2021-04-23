@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Shipping Status Traker" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-input 
+                label="Enter the traking number:" 
+                value={accountName} 
+                onchange={changeHandler}
+            ></lightning-input>
+            <lightning-button
+            label="Search"
+            variant="brand"
+            onclick={handleSearch}
+            ></lightning-button>
+            <lightning-button
+            label="Register"
+            variant="brand-outline"
+            onclick={handleRegister}
+            disabled={disableButton}
+            ></lightning-button>
+            <template if:false={noRecords}>
+                <lightning-datatable
+                key-field="Id"
+                data={trackings}
+                columns={columns}
+                onrowaction={handleRowAction}
+            ></lightning-datatable> 
+            </template>
+<template if:true={noRecords}>
+                <div>There are no existing matches</div>
+            </template>
+</div>
+</lightning-card>
+</template>

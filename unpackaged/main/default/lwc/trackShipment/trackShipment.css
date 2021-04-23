@@ -1,0 +1,19 @@
+p {
+    color: #fff;
+}
+
+.slds-form-element{
+    background-color: #303030;
+    text-align: center;
+    border: 0;
+}
+
+button{
+    margin: 15px;
+}
+
+.tracking-form-container{
+    text-align: center;
+    float: center;
+    border: 0;
+}

@@ -26,4 +26,19 @@
         <default>false</default>
         <label>Other</label>
     </standardValue>
+    <standardValue>
+        <fullName>Change Information</fullName>
+        <default>false</default>
+        <label>Change Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Incident</fullName>
+        <default>false</default>
+        <label>Incident</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inquiry</fullName>
+        <default>false</default>
+        <label>Inquiry</label>
+    </standardValue>
 </StandardValueSet>

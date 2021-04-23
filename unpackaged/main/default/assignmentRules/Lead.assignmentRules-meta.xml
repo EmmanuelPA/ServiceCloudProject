@@ -3,7 +3,7 @@
         <fullName>Standard</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>emmanuel.pecha@curious-fox-cv6cuq.com</assignedTo>
+            <assignedTo>emmanuel.pecha@cunning-unicorn-5zmeah.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -12,7 +12,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>emmanuel.pecha@curious-fox-cv6cuq.com</assignedTo>
+            <assignedTo>emmanuel.pecha@cunning-unicorn-5zmeah.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>

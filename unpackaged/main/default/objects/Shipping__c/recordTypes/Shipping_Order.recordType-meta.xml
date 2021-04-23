@@ -23,7 +23,7 @@
         </values>
         <values>
             <fullName>Processing</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
         <values>
             <fullName>Received on destination country</fullName>

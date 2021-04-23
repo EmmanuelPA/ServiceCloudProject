@@ -1,0 +1,3 @@
+Hi {!Shipping__c.Sender_First_Name__c} {!Shipping__c.Sender_Last_Name__c}
+
+The status of delivery ( {!Shipping__c.Name} ) is {!Shipping__c.Status__c}.

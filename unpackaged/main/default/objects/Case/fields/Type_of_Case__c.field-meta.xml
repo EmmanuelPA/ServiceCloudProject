@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Case__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Case</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>About delivery times</fullName>
+                <default>false</default>
+                <label>About delivery times</label>
+            </value>
+            <value>
+                <fullName>About shipment confirmation emails</fullName>
+                <default>false</default>
+                <label>About shipment confirmation emails</label>
+            </value>
+            <value>
+                <fullName>About shipment's current location</fullName>
+                <default>false</default>
+                <label>About shipment's current location</label>
+            </value>
+            <value>
+                <fullName>Information about Universal Logistics</fullName>
+                <default>false</default>
+                <label>Information about Universal Logistics</label>
+            </value>
+            <value>
+                <fullName>Question</fullName>
+                <default>false</default>
+                <label>Question</label>
+            </value>
+            <value>
+                <fullName>Package was delivered damaged</fullName>
+                <default>false</default>
+                <label>Package was delivered damaged</label>
+            </value>
+            <value>
+                <fullName>Package was never delivered or was stolen</fullName>
+                <default>false</default>
+                <label>Package was never delivered or was stolen</label>
+            </value>
+            <value>
+                <fullName>Change delivery address</fullName>
+                <default>false</default>
+                <label>Change delivery address</label>
+            </value>
+            <value>
+                <fullName>Change contact information</fullName>
+                <default>false</default>
+                <label>Change contact information</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

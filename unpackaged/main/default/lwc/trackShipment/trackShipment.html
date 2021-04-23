@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-form-element">
+        <div class="tracking-form-container">
+            <lightning-input type="text" value={trackingNum} label="Tracking" variant="label-hidden" placeholder="Your Tracking Number" required="" onchange={searchShipping} class="slds-input"></lightning-input>
+            <button class="slds-button slds-button_brand" onclick={handleSearchShipping}>Submit</button>
+        </div>
+        <template if:true={shipping.data}>
+            <lightning-datatable hide-checkbox-column="true" resize-column-disabled key-field="Id" data={shipping.data} columns={columns}>
+    
+            </lightning-datatable>
+            <p>Shipment Tracking</p>
+            <c-track-location value={trackingNum} ></c-track-location>
+            <!-- <template if:false=>
+                <p>Your Shipment is still processing.</p>
+            </template>
+            <template if:true=>
+                
+            </template> -->
+        </template>
+        <template if:false={shipping.data}>
+            <p>No results found. Please verify your information</p>
+        </template>
+    </div>
+    
+    
+    
+</template>
