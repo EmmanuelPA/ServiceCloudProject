@@ -1,15 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>Email_Of_Delivered</fullName>
+        <description>Email Of Delivered</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Exclusive_Status_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Of_Out_Status</fullName>
+        <description>Email Of Out Status</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Status_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Of_Received</fullName>
+        <description>Email Of Received</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Exclusive_Status_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Of_Transit</fullName>
+        <description>Email Of Transit</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Status_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_Shipped</fullName>
+        <description>Email Shipped</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Exclusive_Status_Template</template>
+    </alerts>
+    <alerts>
         <fullName>Email_information_of_shippment</fullName>
         <description>Email information of shippment</description>
         <protected>false</protected>
         <recipients>
-            <recipient>CEO</recipient>
-            <type>role</type>
+            <field>Contact_Email__c</field>
+            <type>email</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>unfiled$public/ShippingEmail</template>
+        <template>unfiled$public/Status_Template</template>
     </alerts>
+    <alerts>
+        <fullName>Email_of_processing_shippment</fullName>
+        <description>Email of processing shippment</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Status_Template</template>
+    </alerts>
+    <rules>
+        <fullName>Delivered Status</fullName>
+        <actions>
+            <name>Email_Of_Delivered</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Contact_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Sender__r.Email)),  CONTAINS(TEXT(Status__c), 'Delivered'))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email alert for related contact</fullName>
+        <actions>
+            <name>Email_information_of_shippment</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Contact_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Sender__r.Email)),  CONTAINS(TEXT(Status__c), 'Processing'))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Out Status</fullName>
+        <actions>
+            <name>Email_Of_Out_Status</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Contact_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Sender__r.Email)),  CONTAINS(TEXT(Status__c), 'Out for delivery'))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Received status</fullName>
+        <actions>
+            <name>Email_Of_Received</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Contact_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Sender__r.Email)),  CONTAINS(TEXT(Status__c), 'Received on destination country'))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Shipped Status</fullName>
+        <actions>
+            <name>Email_Shipped</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Contact_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Sender__r.Email)),  CONTAINS(TEXT(Status__c), 'Shipped'))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
     <rules>
         <fullName>Shipping rule</fullName>
         <actions>
@@ -24,4 +160,42 @@
         </criteriaItems>
         <triggerType>onCreateOnly</triggerType>
     </rules>
+    <rules>
+        <fullName>Transit Status</fullName>
+        <actions>
+            <name>Email_Of_Transit</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Contact_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Sender__r.Email)),  CONTAINS(TEXT(Status__c), 'In transit'))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>preparing shipment</fullName>
+        <actions>
+            <name>Email_of_processing_shippment</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Update_Contact_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(NOT(ISBLANK(Sender__r.Email)),  CONTAINS(TEXT(Status__c), 'Preparing to Ship'))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <fieldUpdates>
+        <fullName>Update_Contact_Email</fullName>
+        <field>Contact_Email__c</field>
+        <formula>Sender__r.Email</formula>
+        <name>Update Contact Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
 </Workflow>

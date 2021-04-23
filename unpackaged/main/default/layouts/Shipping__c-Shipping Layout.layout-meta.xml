@@ -35,12 +35,8 @@
         <label>Sender Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Sender_First_Name__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Sender_Last_Name__c</field>
+                <behavior>Required</behavior>
+                <field>Sender__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -86,7 +82,7 @@
                 <field>Recipient_Last_Name__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>Delivery_Street__c</field>
             </layoutItems>
             <layoutItems>
@@ -144,6 +140,7 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
+        <fields>OBJECT_ID</fields>
         <fields>Country_Code__c</fields>
         <fields>Description__c</fields>
         <fields>CREATED_DATE</fields>
@@ -155,7 +152,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h5e000001BroF</masterLabel>
+        <masterLabel>00h5e000000G9nZ</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

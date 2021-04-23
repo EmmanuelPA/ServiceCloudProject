@@ -1,0 +1,72 @@
+<template>
+    <div class="slds-grid slds-grid_vertical slds-gutters">
+        <div class="slds-col-medium slds-align_absolute-center">
+            <lightning-card title="Tell us about your problem" icon-name="standard:record">
+                <div class="slds-m-around_medium">
+                    <!--  ----------------------------------------------------------------------  -->
+                    <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+                    <!--  If necessary, please modify the charset parameter to specify the        -->
+                    <!--  character set of your HTML page.                                        -->
+                    <!--  ----------------------------------------------------------------------  -->
+
+
+                    <!--  ----------------------------------------------------------------------  -->
+                    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+                    <!--  ----------------------------------------------------------------------  -->
+
+                    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+                        <input type=hidden name="orgid" value="00D5e000000IsN5">
+                        <input type=hidden name="retURL"
+                            value="https://cases-service-cloud-pr-developer-edition.na162.force.com/s/">
+
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                        <!--  these lines if you wish to test in debug mode.                          -->
+                        <!--  <input type="hidden" name="debug" value=1>                              -->
+                        <!--  <input type="hidden" name="debugEmail"                                  -->
+                        <!--  value="emmanuel.pecha@gmail.com">                                       -->
+                        <!--  ----------------------------------------------------------------------  -->
+
+                        <label for="email">Email</label>
+                        <lightning-input id="email" maxlength="80" name="email" size="20" type="text"
+                            onchange={handleChangeEmail} required>
+                        </lightning-input><br>
+
+                        <label for="name">Contact Name</label>
+                        <lightning-input id="name" maxlength="80" value={contactToEmail} name="name" size="20"
+                            type="text" required disabled="disabled">
+                        </lightning-input><br>
+
+                        <label for="phone">Phone</label>
+                        <lightning-input id="phone" maxlength="40" name="phone" size="20" type="text" required>
+                        </lightning-input><br>
+
+                        <label for="name">Case type</label>
+                        <lightning-combobox name="type" id="type" label="select the case type" value={values}
+                            placeholder="Select option" options={searchOptions} onchange={handleChanges} required>
+                        </lightning-combobox><br>
+
+                        <label>What can we help you with?</label>
+                        <lightning-combobox name="00N5e000003mYEo" id="00N5e000003mYEo"  value={typeOfCase}
+                            placeholder="Select option" options={aboutInfoToUpdate} onchange={handleType} >
+                        </lightning-combobox><br>
+
+                        <label for="subject">Tracking Number</label>
+                        <lightning-input id="subject" maxlength="80" name="subject" size="20" type="text" required>
+                        </lightning-input><br>
+
+                        <label for="description">Description</label>
+                        <lightning-textarea name="description" label="Enter a brief description of your problem">
+                        </lightning-textarea><br>
+
+                        <lightning-button if:false={isLoading} label="Send" variant="brand" name="submit" type="submit"
+                            onclick={fireEvent}></lightning-button>
+                        <lightning-spinner if:true={isLoading}></lightning-spinner>
+
+                    </form>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

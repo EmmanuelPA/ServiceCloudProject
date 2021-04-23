@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Case Reassignment</name>
+    <style>none</style>
+    <subject>The next case has been escalated</subject>
+    <textOnly>The following case has been escalated to you since it is nearing its SLA time limit and is still open.
+
+Company: {!Account.Name}
+Service Level: {!Account_Service_Level}
+Product: {!Case.Product__c}
+Case #: {!Case.CaseNumber}
+Case Subject: {!Case.Subject}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

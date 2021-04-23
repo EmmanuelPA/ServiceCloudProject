@@ -9,7 +9,7 @@
     <enableFeedPinning>true</enableFeedPinning>
     <enableFeedsDraftPosts>true</enableFeedsDraftPosts>
     <enableFeedsRichText>true</enableFeedsRichText>
-    <enableInviteCsnUsers>false</enableInviteCsnUsers>
+    <enableInviteCsnUsers>true</enableInviteCsnUsers>
     <enableOutOfOfficeEnabledPref>false</enableOutOfOfficeEnabledPref>
     <enableRichLinkPreviewsInFeed>true</enableRichLinkPreviewsInFeed>
     <enableTodayRecsInFeed>true</enableTodayRecsInFeed>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Email Inquiries</name>
+    <style>none</style>
+    <subject>Thank you for contact us</subject>
+    <textOnly>Dear {!Case.SuppliedName},
+
+Thank you for submitting your question to us online. Case #{!Case.CaseNumber}: &quot;{!Case.Subject}&quot; has been created and a {!Organization.Name} Customer Advocate will get back to you within the next 24 hours.
+
+Thank you,
+
+Customer Advocate Team
+{!Organization.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

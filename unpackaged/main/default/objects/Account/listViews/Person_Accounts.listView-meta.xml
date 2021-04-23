@@ -5,14 +5,17 @@
     <columns>First_Name__c</columns>
     <columns>Last_Name__c</columns>
     <columns>Email__c</columns>
-    <columns>ACCOUNT.PHONE1</columns>
-    <columns>ACCOUNT.ADDRESS1_STATE</columns>
-    <columns>CORE.USERS.ALIAS</columns>
-    <filterScope>Mine</filterScope>
+    <columns>Shipments_this_Month__c</columns>
+    <filterScope>Everything</filterScope>
     <filters>
         <field>ACCOUNT.RECORDTYPE</field>
         <operation>equals</operation>
         <value>Account.Person_Account</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>4/23/2021 12:00 AM</value>
     </filters>
     <label>Person Accounts</label>
 </ListView>

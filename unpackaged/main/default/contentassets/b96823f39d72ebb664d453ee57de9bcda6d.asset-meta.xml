@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>b96823f39d72ebb664d453ee57de9bcda6d</masterLabel>
+    <originNetwork>Universal Logistic Page</originNetwork>
+    <relationships>
+        <network>
+            <access>VIEWER</access>
+            <name>Universal Logistic Page</name>
+        </network>
+        <workspace>
+            <access>INFERRED</access>
+            <isManagingWorkspace>true</isManagingWorkspace>
+            <name>sfdc_asset_company_assets</name>
+        </workspace>
+    </relationships>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>b96823f39d72ebb664d453ee57de9bcda6d945dca59fc7327249b92bdf9976df.gif</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

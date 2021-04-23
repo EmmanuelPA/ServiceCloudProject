@@ -15,14 +15,32 @@
         <label><!-- Welcome --></label>
         <name>Welcome</name>
     </customTabs>
+    <customTabs>
+        <label><!-- shipping status tracker --></label>
+        <name>shipping_status_tracker</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows />
+        <fullName>Create_Contact</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Create_Person_Account</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Set_Record_Types</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>Update_Shipping_By_Tracking</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows />
+        <fullName>create_cases</fullName>
+    </flowDefinitions>
     <flowDefinitions>
         <flows>
-            <choices>
-                <name>S_f6dcd3bd_2efc_4cdd_a3d5_4fb54e458aac</name>
-            </choices>
-            <choices>
-                <name>S_3792e0ac_4617_447c_b1de_9c5075f6b9d1</name>
-            </choices>
             <choices>
                 <name>S_149a89f6_e93f_4402_b3c5_24148bee75c0</name>
             </choices>
@@ -31,6 +49,12 @@
             </choices>
             <choices>
                 <name>S_a0e9d086_3411_4d8f_950d_f2758a33fc68</name>
+            </choices>
+            <choices>
+                <name>S_f6dcd3bd_2efc_4cdd_a3d5_4fb54e458aac</name>
+            </choices>
+            <choices>
+                <name>S_3792e0ac_4617_447c_b1de_9c5075f6b9d1</name>
             </choices>
             <screens>
                 <fields>
@@ -71,6 +95,10 @@
         <fullName>net_promoter_score</fullName>
     </flowDefinitions>
     <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
         <label><!-- LogACall --></label>
         <name>LogACall</name>
     </quickActions>
@@ -81,6 +109,10 @@
     <quickActions>
         <label><!-- NewCase --></label>
         <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
     </quickActions>
     <quickActions>
         <label><!-- NewContact --></label>

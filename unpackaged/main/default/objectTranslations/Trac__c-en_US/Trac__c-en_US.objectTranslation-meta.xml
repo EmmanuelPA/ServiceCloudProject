@@ -8,11 +8,6 @@
         <plural>true</plural>
         <value>Trackings</value>
     </caseValues>
-    
-    
-    
-    
-    
     <layouts>
         <layout>Tracking Layout</layout>
         <sections>
@@ -24,5 +19,11 @@
             <section>Tracking Comments</section>
         </sections>
     </layouts>
+    
+    
+    
+    
+    
+    
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

@@ -286,6 +286,9 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Return_Country__c</fields>
+        <fields>Delivery_Country__c</fields>
+        <fields>Status__c</fields>
         <relatedList>Shipping__c.Account__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>

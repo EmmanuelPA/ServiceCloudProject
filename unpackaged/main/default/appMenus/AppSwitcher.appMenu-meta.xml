@@ -112,4 +112,8 @@
         <name>standard__LightningBolt</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Universal Logistic Page</name>
+        <type>Network</type>
+    </appMenuItems>
 </AppMenu>

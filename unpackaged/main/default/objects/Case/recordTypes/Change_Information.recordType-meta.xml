@@ -129,23 +129,30 @@
     <picklistValues>
         <picklist>Type</picklist>
         <values>
-            <fullName>Electrical</fullName>
+            <fullName>Change Information</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Incident</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Electronic</fullName>
+            <fullName>Inquiry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Case__c</picklist>
+        <values>
+            <fullName>Change contact information</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Mechanical</fullName>
+            <fullName>Change delivery address</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Other</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Structural</fullName>
             <default>false</default>
         </values>
     </picklistValues>

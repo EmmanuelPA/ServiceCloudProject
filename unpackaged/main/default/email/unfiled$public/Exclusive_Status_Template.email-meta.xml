@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Exclusive Status Template</name>
+    <style>none</style>
+    <subject>Your shipment status</subject>
+    <textOnly>Hi {!Shipping__c.Sender_First_Name__c} {!Shipping__c.Sender_Last_Name__c}
+
+The status of delivery ( {!Shipping__c.Name} ) is {!Shipping__c.Status__c}.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

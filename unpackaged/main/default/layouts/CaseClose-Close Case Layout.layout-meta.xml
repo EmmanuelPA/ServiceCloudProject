@@ -20,7 +20,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Tracking_Number__c</field>
+                <field>Type_of_Case__c</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>

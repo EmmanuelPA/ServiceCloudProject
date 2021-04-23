@@ -6,9 +6,9 @@
     <issuer>https://trailhead.my.salesforce.com</issuer>
     <loginUrl>https://trailhead.my.salesforce.com/idp/endpoint/HttpPost</loginUrl>
     <name>trailhead SAML SSO Setting</name>
-    <oauthTokenEndpoint>https://curious-fox-cv6cuq-dev-ed.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <oauthTokenEndpoint>https://cunning-unicorn-5zmeah-dev-ed.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
     <redirectBinding>false</redirectBinding>
-    <salesforceLoginUrl>https://curious-fox-cv6cuq-dev-ed.my.salesforce.com</salesforceLoginUrl>
+    <salesforceLoginUrl>https://cunning-unicorn-5zmeah-dev-ed.my.salesforce.com</salesforceLoginUrl>
     <samlEntityId>https://saml.salesforce.com/00D41000000F47YEAS</samlEntityId>
     <samlVersion>SAML2_0</samlVersion>
     <useConfigRequestMethod>false</useConfigRequestMethod>

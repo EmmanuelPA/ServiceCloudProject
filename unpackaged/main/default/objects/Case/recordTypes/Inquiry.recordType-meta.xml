@@ -48,39 +48,7 @@
     <picklistValues>
         <picklist>Product__c</picklist>
         <values>
-            <fullName>GC1020</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>GC1040</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>GC1060</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>GC3020</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>GC3040</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>GC3060</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>GC5020</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>GC5040</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>GC5060</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -129,15 +97,34 @@
     <picklistValues>
         <picklist>Type</picklist>
         <values>
-            <fullName>Electrical</fullName>
+            <fullName>Change Information</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Electronic</fullName>
+            <fullName>Incident</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Mechanical</fullName>
+            <fullName>Inquiry</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Case__c</picklist>
+        <values>
+            <fullName>About delivery times</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>About shipment confirmation emails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>About shipment%27s current location</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information about Universal Logistics</fullName>
             <default>false</default>
         </values>
         <values>
@@ -145,7 +132,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Structural</fullName>
+            <fullName>Question</fullName>
             <default>false</default>
         </values>
     </picklistValues>
