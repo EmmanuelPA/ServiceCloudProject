@@ -1,3 +1,9 @@
+/**
+* @author Jose Pech
+* @date 21 04 2021
+*
+* @description Test for CaseFireAssignment that  mock a web case and escalation rules
+*/
 @isTest
 public class CaseFireAssignmentTest {
 	@isTest

@@ -1,3 +1,9 @@
+/**
+* @author Jose Pech
+* @date 21 04 2021
+*
+* @description Test for ContactController class that  retrieve a contact filtering by email
+*/
 @isTest
 public class ContactControllerTest {
     @isTest
