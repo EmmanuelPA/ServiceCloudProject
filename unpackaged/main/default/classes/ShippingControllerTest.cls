@@ -20,7 +20,7 @@ class ShippingControllerTest {
     	Test.startTest();
         try
       {
-          List<Shipping__c> result = ShippingController2.getShippingInformation('String que no pertenece a ningun record');
+          List<Shipping__c> result = ShippingController.getShippingInformation('String que no pertenece a ningun record');
       }
       catch(exception e)
          {
@@ -36,7 +36,7 @@ class ShippingControllerTest {
         Shipping__c searchShipping = [SELECT Name FROM Shipping__c WHERE Id = :searchId];
         String trackNum = searchShipping.Name;
         Test.startTest();
-        List<Shipping__c> result = ShippingController2.getShippingInformation(trackNum);
+        List<Shipping__c> result = ShippingController.getShippingInformation(trackNum);
         Integer actualSize = result.size();
     	Test.stopTest();
         System.assertEquals(dummyShippings.isEmpty(), false);
