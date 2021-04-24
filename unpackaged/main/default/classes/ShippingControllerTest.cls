@@ -2,9 +2,16 @@
 class ShippingControllerTest {
     public static List<Shipping__c> createDummyShippingRecords(Integer numShips){
         List<Shipping__c> shp = new List<Shipping__c>();
-        
+        Account account = new Account(Name = 'OwO');
+        insert account;
+        //Account__c, Sender__c]: [Account__c, Sender__c
+        Contact contact = new Contact(LastName = 'Senior uwu',
+                                     AccountId = account.Id);
+        insert contact;
         for (Integer count = 0; count < numShips; count++) {
-        	Shipping__c s = new Shipping__c(Account__c='0015e0000031OYTAA2', Delivery_Street__c='Str. '+count);
+        	Shipping__c s = new Shipping__c(Account__c=account.Id, Delivery_Street__c='Str. '+count,
+                                           Sender__c = contact.Id
+                                           );
             shp.add(s);
     	}
         

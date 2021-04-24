@@ -13,6 +13,8 @@ public class EmailToCaseTriggerHandler {
              idEmail = e.CreatedById;
              Searchvalue = '%' + address + '%';     
         }
+        
+        
         contactAcc = [SELECT AccountId FROM Contact WHERE Email LIKE :Searchvalue LIMIT 1]; 
         
          for(Contact c : contactAcc){  
@@ -21,9 +23,15 @@ public class EmailToCaseTriggerHandler {
          obj = [SELECT Id, AccountId, Account.RecordType.Name, Account.CustomerPriority__c
       		    FROM Contact
                 WHERE AccountId =: idAcc ];
+          
+        //
+       /* obj = [SELECT Id, AccountId, Account.RecordType.Name, Account.CustomerPriority__c
+      		    FROM Contact
+                WHERE Email =: address ];
         
+        idAcc = obj.Id;*/
         //regex
-        Pattern MyPattern = Pattern.compile('.*(\\S[0-9]{2}(0[0-9]{1})|(1[0-2]{1})[0-9]{6}}).*');
+        Pattern MyPattern = Pattern.compile('.*(\\S21[0-9]{8}).*');
         Matcher MyMatcher = MyPattern.matcher(body);
         if(MyMatcher.matches()){
 			 track = MyMatcher.group(1);           
